@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './componants/Header/Header';
+import Home from './componants/Home/Home';
+import   CardRow from './componants/cardSection/CardRow';
+import {orginals,action,Romance,War,Comedy} from './urls'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <Header/>
+       <Home/>
+       <CardRow url={orginals} title='Netflix orginals'/>
+       <CardRow url={action}  title='action'  isSmall/>
+       <CardRow url={Comedy}  title='Comedy'  isSmall/>
+       <CardRow url={Romance}  title='Romance'  isSmall/>
+       <CardRow url={War}  title='War'  isSmall/>
+
     </div>
-  );
+
+  )
 }
 
 export default App;
