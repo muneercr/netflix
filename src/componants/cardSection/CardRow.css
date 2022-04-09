@@ -3,13 +3,21 @@
     color: #fff;
 }
 
+
+
 .cardDiv{
     display: flex;
     padding: 20px;
-    overflow-x: scroll;
+    overflow-x: scroll !important;
     overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 
 }
+.cardDiv::-webkit-scrollbar{
+    display: none;
+}
+
 
 .cardImg{
     max-height: 250px;
@@ -22,10 +30,6 @@
     transition: .4s ease-out; 
 }
 
-.cardDiv::-webkit-scrollbar{
-display: none;
-}
-
 .smallimg{
     max-height:150px ;
     margin-right: 20px;
@@ -33,7 +37,6 @@ display: none;
     transition: .4s ease-out; 
     transition-delay: .1s;
 }
-
 .smallimg:hover {
     transform: scale(1.1);
     transition: .4s ease-out; 

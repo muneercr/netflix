@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+ 
 }
 .header{
     width: 100%;
@@ -9,14 +10,24 @@
     background-color:#111 ;
     display: flex;
     top: 0;
+    margin-left: -20px;
+    justify-content:space-between ;
+    z-index: 1;
+    position: fixed;
+}
 
-}.logo{
-    position: 250px;
-    width: 80px;
+.logo{
+   
+    width: 100px;
    
 }
+
 
 body{
     background-color:#111;
 
+}
+
+.SmileLogo{
+    margin-right: 40px;
 }

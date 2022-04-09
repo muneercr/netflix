@@ -12,7 +12,7 @@ function App() {
     <div>
        <Header/>
        <Home/>
-       <CardRow url={orginals} title='Netflix orginals'/>
+       <CardRow url={orginals} title='Netflix orginals'   items={4}/>
        <CardRow url={action}  title='action'  isSmall/>
        <CardRow url={Comedy}  title='Comedy'  isSmall/>
        <CardRow url={Romance}  title='Romance'  isSmall/>
